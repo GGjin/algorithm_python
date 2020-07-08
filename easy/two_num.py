@@ -18,15 +18,13 @@
 """
 from typing import List
 
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        length = len(nums)
-        for i in range(length):
-            temp1 = nums[i]
-            temp2 = target - temp1
-            if temp2 in nums and nums.index(temp2) != i:
-                index1 = i
-                index2 = nums.index(temp2)
-                return index1, index2
 
-
+def twoSum(self, nums: List[int], target: int) -> List[int]:
+    length = len(nums)
+    for i in range(length):
+        temp1 = nums[i]
+        temp2 = target - temp1
+        if temp2 in nums and nums.index(temp2) != i:
+            index1 = i
+            index2 = nums.index(temp2)
+            return index1, index2
