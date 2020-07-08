@@ -59,20 +59,19 @@
 
 
 # leetcode submit region begin(Prohibit modification and deletion)
-class Solution:
-    def romanToInt(self, s: str) -> int:
-        sDict = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000,
-                 "IV": 4, "IX": 9, "XL": 40, "XC": 90, "CD": 400, "CM": 900}
-        special = {"IV": 4, "IX": 9, "XL": 40, "XC": 90, "CD": 400, "CM": 900}
-        sList = [s[0]]
-        for char in s[1:len(s)]:
-            if sList[len(sList) - 1] + char in special:
-                sList[len(sList) - 1] += char
-            else:
-                sList.append(char)
+def romanToInt(self, s: str) -> int:
+    sDict = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000,
+             "IV": 4, "IX": 9, "XL": 40, "XC": 90, "CD": 400, "CM": 900}
+    special = {"IV": 4, "IX": 9, "XL": 40, "XC": 90, "CD": 400, "CM": 900}
+    sList = [s[0]]
+    for char in s[1:len(s)]:
+        if sList[len(sList) - 1] + char in special:
+            sList[len(sList) - 1] += char
+        else:
+            sList.append(char)
 
-        value = 0
-        for i in sList:
-            value += sDict[i]
-        return value
+    value = 0
+    for i in sList:
+        value += sDict[i]
+    return value
 # leetcode submit region end(Prohibit modification and deletion)
