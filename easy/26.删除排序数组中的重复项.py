@@ -44,8 +44,6 @@
 #     print(nums[i]);
 # }
 #
-#  Related Topics 数组 双指针
-#  👍 1516 👎 0
 
 
 # leetcode submit region begin(Prohibit modification and deletion)
@@ -64,4 +62,8 @@ class Solution:
                 nums[i] = nums[j]
 
         return i + 1
+
+
 # leetcode submit region end(Prohibit modification and deletion)
+
+

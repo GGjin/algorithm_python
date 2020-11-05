@@ -41,8 +41,7 @@
 #
 #  输入: "{[]}"
 # 输出: true
-#  Related Topics 栈 字符串
-#  👍 1664 👎 0
+
 
 
 # leetcode submit region begin(Prohibit modification and deletion)

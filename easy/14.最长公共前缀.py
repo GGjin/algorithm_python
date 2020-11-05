@@ -18,8 +18,6 @@
 #  说明:
 #
 #  所有输入只包含小写字母 a-z 。
-#  Related Topics 字符串
-#  👍 1136 👎 0
 
 
 # leetcode submit region begin(Prohibit modification and deletion)
