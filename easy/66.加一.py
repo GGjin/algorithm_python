@@ -53,7 +53,7 @@ class Solution1:
 
 # leetcode submit region end(Prohibit modification and deletion)
 
-a = [4, 3, 2, 1]
+a = [4, 3, 2, 9]
 b = Solution().plusOne(a)
 
 print(b)
