@@ -31,7 +31,8 @@
 # leetcode submit region begin(Prohibit modification and deletion)
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
-        if not needle: return 0
+        if not needle:
+            return 0
         try:
             return haystack.index(needle)
         except(ValueError):
