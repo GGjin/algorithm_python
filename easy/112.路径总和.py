@@ -28,6 +28,7 @@ class TreeNode:
         self.right = None
 
 
+# 需要考虑到，总和为负数，以及节点为负数的时候，所以不能够直接因为大小来判断是否舍弃该路径
 class Solution:
     def hasPathSum(self, root: TreeNode, sum: int) -> bool:
         if not root:
